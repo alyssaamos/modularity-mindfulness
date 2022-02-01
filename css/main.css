@@ -19,6 +19,39 @@ html {
 
 body {
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-gap: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content;
+}
+
+ul li {
+  margin: .5em, 1em, 6em;
+  font-style: normal;
+}
+
+a {
+  color: #3783a3
+}
+
+figcaption > a {
+  text-decoration: none;
+  font-style: normal;
+  border: .2rem #3783a3 solid;
+  padding: 1rem;
+  border-radius: .3rem;
+}
+
+div {
+  text-align: center;
+  border-top: .2rem #e2e2e2 solid;
+  border-bottom: 2rem #e2e2e2 solid;
 }
 
 img {
