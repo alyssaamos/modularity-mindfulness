@@ -19,16 +19,35 @@ html {
 
 body {
   margin: 0;
-  display: grid;
-  grid-template-columns: repeat (3, 1fr);
-  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  margin: 0;
+  display: flec;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
   display: flex;
-  justify-content;
+  justify-content: center;
 }
 
 ul li {
@@ -40,13 +59,36 @@ a {
   color: #3783a3
 }
 
-figcaption > a {
+article > a {
   text-decoration: none;
   font-style: normal;
   border: .2rem #3783a3 solid;
-  padding: 1rem;
+  padding: .5em 1em .6em;
   border-radius: .3rem;
 }
+
+intro. {
+
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+article {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 div {
   text-align: center;
@@ -54,7 +96,9 @@ div {
   border-bottom: 2rem #e2e2e2 solid;
 }
 
-img {
-  display: block;
-  width: 100%;
+footer {
+  border-top: .2rem solid #e2e2e2;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
 }
