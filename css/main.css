@@ -16,3 +16,221 @@ html {
   font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
 }
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "banner"
+    "quote"
+    "viewing"
+    "gravel"
+    "symbolism"
+    "footer";
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  grid-area: banner;
+  padding: 1rem;
+}
+
+h1 i {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  padding: 0 0 1rem;
+  justify-content: center;
+  margin: 0;
+}
+
+nav li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+nav li a {
+  color: #3783a3;
+  font-size: 1.125rem;
+}
+
+main {
+  padding: 1rem;
+  display: contents;
+}
+
+div {
+  grid-area: quote;
+  padding: .5rem 1rem;
+}
+
+div p i {
+  font-size: 2rem;
+}
+
+div p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 1rem 1rem 1.5rem;
+  border-style: solid;
+  border-right: none;
+  border-left: none;
+  border-top-color: #e2e2e2;
+  border-bottom-color: #e2e2e2;
+}
+
+section {
+  display: contents;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+h2 i {
+  font-size: 1.5rem;
+}
+
+article {
+  padding: 1rem 1rem 0;
+}
+
+article p {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+article img {
+  padding: 0;
+}
+
+article a {
+  display: flex;
+  color: #3783a3;
+  text-decoration: none;
+  border-color: #3783a3;
+  opacity: .5;
+  border-width: .2rem;
+  border-radius: .3rem;
+  border-style: solid;
+  padding: .5rem 1rem;
+}
+
+.viewing {
+  grid-area: viewing;
+}
+
+.gravel {
+  grid-area: gravel;
+}
+
+.symbolism {
+  grid-area: symbolism;
+  padding-bottom: 1.5rem;
+}
+
+.symbolism img {
+  padding: 0;
+}
+
+footer {
+  grid-area: footer;
+  border-top-style: solid;
+  border-top-color: #e2e2e2;
+  text-align: center;
+}
+
+/* 608px */
+
+@media only screen and (min-width: 38em) {
+
+  body {
+    display: grid;
+    grid-template-areas:
+      "h1 nav nav"
+      "banner banner banner"
+      "quote quote quote"
+      "viewing gravel symbolism"
+      "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  header {
+    display: contents;
+  }
+
+  h1 {
+    grid-area: h1;
+    font-size: 1.125rem;
+    text-align: left;
+    padding-left: .5rem;
+  }
+
+  h1 i {
+    font-size: 2rem;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  nav li a {
+    text-decoration: none;
+  }
+
+  .banner {
+    grid-area: banner;
+  }
+
+  div {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  article {
+    padding: 0;
+  }
+
+  article a {
+    display: flex;
+    align-items: flex-end;
+  }
+
+}
+
+/* 1000px */
+
+@media only screen and (min-width: 62.5em) {
+
+  div {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
+}
